@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/btn_get_pic_form_photo_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="调用相册" />
+
+    <Button
+        android:id="@+id/btn_get_Permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="动态权限申请" />
+
+    <Button
+        android:id="@+id/btn_get_pic_from_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="调用相机" />
+
+
+    <Button
+        android:id="@+id/btn_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="灰度"
+        android:layout_below="@+id/btn_get_pic_form_photo_album" />
+
+    <Button
+        android:id="@+id/btn_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="横向倾斜校正"
+        android:layout_below="@+id/btn_get_pic_form_photo_album" />
+
+    <Button
+        android:id="@+id/btn_margin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="纵向倾斜校正"
+        android:layout_below="@+id/btn_get_pic_form_photo_album" />
+
+    <Button
+        android:id="@+id/btn_adj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="色彩调节"
+        android:layout_below="@+id/btn_gray"/>
+
+    <Button
+        android:id="@+id/btn_rolling_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="图像翻转"
+        android:layout_below="@+id/btn_gray"/>
+
+    <ImageView
+        android:id="@+id/iv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/btn_adj"/>
+
+</RelativeLayout>

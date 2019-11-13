@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.50"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/color_hue"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="色    调"
+                android:textSize="20dp"/>
+            <SeekBar
+                android:id="@+id/sb_Hue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/color_hue"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/color_saturation"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="饱和度"
+                android:textSize="20dp"/>
+
+            <SeekBar
+                android:id="@+id/sb_Sat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/color_saturation"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/color_lum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="亮    度"
+                android:textSize="20dp"/>
+            <SeekBar
+                android:id="@+id/sb_Lum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/color_lum"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+    <!--
+        <SeekBar
+            android:id="@+id/sb_Hue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="262dp" />
+
+        <SeekBar
+            android:id="@+id/sb_Sat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/seekBar1"
+            android:layout_marginTop="86dp" />
+
+        <SeekBar
+            android:id="@+id/sb_Lum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seekBar2"
+            android:layout_marginTop="67dp" />
+
+        <ImageView
+            android:id="@+id/mImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/letme" />
+    -->
